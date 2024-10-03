@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="background-color: rgba(127, 255, 212, 0.562);">
+    <div class="container">
+        <div class="tatle"><h1>Calculator</h1></div>
+        <div id="display" class="display"> 0 </div>
+            <div class="row">
+                <button onclick="prees(7);">7</button>
+                <button onclick="prees(8);">8</button>
+                <button onclick="prees(9);">9</button>
+                <button class="operator" onclick="setOp('/');">&divide;</button>
+            </div>
+            <div class="row">
+                <button onclick="prees(4);">4</button>
+                <button onclick="prees(5);">5</button>
+                <button onclick="prees(6);">6</button>
+                <button class="operator" onclick="setOp('*');">&times;</button>
+            </div>
+            <div class="row">
+                <button onclick="prees(1);">1</button>
+                <button onclick="prees(2);">2</button>
+                <button onclick="prees(3);">3</button>
+                <button class="operator" onclick="setOp('-');">&minus;</button>
+            </div>
+            <div class="row">
+                <button onclick="clr();">C</button>
+                <button onclick="prees(0);">0</button>
+                <button onclick="prees('.')">.</button>
+                <button class="operator" onclick="setOP('+');">&plus;</button>
+            </div>
+            <div class="row">
+                <button class="equals" onclick="calculate();">&equals;</button>
+            </div>
+       
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
